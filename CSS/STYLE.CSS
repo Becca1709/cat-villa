@@ -1,0 +1,436 @@
+body{
+    font-family: sans-serif;
+    color: orange;
+}
+
+hr{
+    width:25%;
+    color:rgba(19, 3, 125, 0.797);
+    border-style: dotted none none;
+    border-width: 15px;
+    margin: 5em auto 5em auto;
+}
+
+li{
+    list-style: none;
+}
+
+footer li{
+    text-decoration: none;
+    line-height: 2em;
+}
+footer a:hover{
+    color:black;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: #f9f8f5;
+    border-radius: 2em 2em 0em 0em;
+    padding: 0 2em;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: orange;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar a{
+    text-decoration: none;
+}
+.nav-bar a:hover{
+    background-color: orange;
+    color: whitesmoke;
+    padding: 1em;
+    border-radius: 1em;
+}
+.active{
+    color:#f9f8f5;
+    background-color: orange;
+    padding: 1em;
+    border-radius: 1em;
+}
+.non-active{
+    color:orange;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    background-color:#f9f8f5;
+    border-radius: 0em 0em 2em 2em;
+}
+
+.text{
+   display: flex;
+   font-size: larger;
+   flex-direction: column;
+   justify-content: center;
+  
+}
+
+.logo img{
+    max-width: 500px;
+   
+}
+.products{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3em;
+    justify-items: center;
+    justify-content: space-around;
+
+}
+.products a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.food, .toys, .hair, .accesories, .tree, .litter, .glasses, .clothes{
+    background-size: cover;
+    border-radius: 1.5rem;
+    color: orange;
+    display: flex;
+    font-weight: 600;
+    font-family: sans-serif;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+    max-width: 40%;
+    min-width: 35%;
+    margin-bottom: 1.5rem;
+    text-align: center;   
+}
+
+.products h3{
+    font-size: 2em;
+}
+.food{
+    background-image: url(/img/cat\ food.webp);
+}
+
+.toys{
+    background-image: url(/img/cat\ toys.webp);
+}
+.hair{
+    background-image: url(/img/cat\ hair.jpg);
+}
+.accesories{
+    background-image: url(/img/cat\ acce.jpeg);
+}
+
+.products button{
+    background-color: orange;
+    border-radius: 1.5em;
+    border: none;
+    padding: 1em;
+    color: whitesmoke;
+    font-weight: 600;
+    width: max-content;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 1em;
+   
+}
+.products button:hover{
+    background-color: rgba(255, 255, 255, 0.031);
+    border: solid 2px;
+    color:slategray;
+}
+
+.container-footer{
+    background-color: #f9f8f5;
+    border-radius: 0em 0em 2em 2em;
+    display: flex;
+    flex-direction: row;
+    font-family: monospace;
+    padding-left: 1rem;
+    padding-right: 1em;
+    justify-content: space-around;
+    color:rgb(19, 3, 125);
+
+}
+
+.contact, .help, .others, .payment{
+    height: max-content;
+    align-items: center;
+}
+
+.container-footer a{
+    text-decoration: none;
+    color: rgb(255, 196, 0); 
+}
+.container-footer ul{
+    padding-left: 0px;
+
+}
+/*PRODUCTS*/
+.all-products{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+
+}
+.all-products button{
+    background-color:rgb(235, 146, 3);
+    border-radius: 1.5em;
+    border: none;
+    padding: 1em;
+    color:rgb(19, 3, 125);
+    width: 100%;
+    min-height: 400px;
+}
+
+.all-products .toys :hover{
+   background-image: url(/img/cat\ toys.webp);
+   background-size: cover;
+}
+
+.all-products .food :hover{
+    background-image: url(/img/cat\ food.webp);
+    background-size: cover;
+   
+}
+.all-products .accesories :hover{
+    background-image: url(/img/cat\ acce.jpeg);
+    background-size: cover;
+    
+}
+.all-products .hair :hover{
+    background-image: url(/img/cat\ hair.jpg);
+    background-size: cover;
+}
+.tree :hover{
+    background-image: url(../img/cat\ tree.jpeg);
+    background-size: cover;
+}
+.litter :hover{
+    background-image: url(../img/litter.webp);
+    background-size: cover;
+
+} 
+.glasses :hover{
+    background-image: url(../img/glases.jpg);
+    background-size: cover;
+} 
+.clothes :hover{
+    background-image: url(../img/costums.jpg);
+    background-size: cover;
+
+}
+
+#letters{
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+/*REGISTRATION FORM*/
+.registration-form{
+    width: 30%;
+    text-align: left;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f8f5;
+    border-radius: 2em;
+    padding: 2em;
+    margin: 2em;
+    color:rgb(19, 3, 125);
+}
+.title-reg{
+    text-align: center;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+input[type=text], select, [type=password]{
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    }
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 1em;
+    }
+    
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    }
+
+
+.registration-form button {
+    margin: 2em 0em 2em 0;
+    padding: 0.5em;
+    }
+
+
+.container-reg{
+    display: flex;
+    direction: row;
+    justify-content: space-around;
+}
+
+.float{
+    align-self: center;
+    max-width: 600px;
+    max-height: 500px;
+    text-align: center;
+    color:rgb(19, 3, 125);
+
+}
+/* ABOUT PAGE*/
+
+.about{
+    display: flex;
+    align-self: center;
+}
+.about img{
+  max-width: 600px;
+  height: fit-content;
+}
+.text-about{
+    margin: 1.5em;
+    min-width: 360px;
+    max-width: 600px;
+    height: fit-content;
+}
+.about-page{
+    display: flex;
+    justify-content: center;
+}
+/*media query reg form*/
+@media only screen and (min-width:360px) and (max-width:900px){
+    .logo img{
+        min-width: 100px;
+    }
+
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        background-color: #f9f8f5;
+        border-radius: 1em 1em 0em 0em;
+        padding: 0 1em;
+        font-weight: 400;
+        font-family: sans-serif;
+        color: orange;
+        font-size: small;
+    }
+    .search{
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+    }
+    .products{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+        justify-content: center;
+        min-height: 80%;
+        margin: 2px;
+    }
+    .food, .toys, .hair, .accesories, .tree, .litter, .glasses, .clothes{
+        background-size: cover;
+        border-radius: 1.5rem;
+        color: orange;
+        font-weight: 600;
+        font-family: sans-serif;
+        text-align: center;   
+        font-size: xx-small;
+        justify-content:space-between;
+        min-width: 80%;
+        min-height: 100px;
+        font-size: larger;
+    }
+
+    #letters{
+        font-size: 2rem;
+        font-weight: 500;    
+    }
+
+    .registration-form{
+        border-radius: 5px;
+        background-color: #f8f4f4;
+        min-width: 400px;
+        font-size: small;
+    }
+
+    .container-reg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .float{
+        align-self: center;
+        text-align: center;
+        color:rgb(19, 3, 125);
+        margin: 1.5em;
+        margin-bottom: 2em;
+    
+    }
+
+    .float img{
+        max-width: 300px;
+    }
+
+    .about-page{
+        flex-direction: column;
+        margin: 10%;
+        align-content: center;
+        max-width: 400px;
+    }
+    .text-about{
+        margin: 0.5em;
+        max-width: 360px;
+    }
+    .about img{
+       max-width: 100%;
+    }
+
+.container-footer{
+    background-color: #f9f8f5;
+    border-radius: 0em 0em 2em 2em;
+    display: flexbox;
+    flex-direction: column;
+    font-family: monospace;
+    justify-content: space-around;
+    color:rgb(19, 3, 125);
+}
+
+.contact, .help, .others, .payment{
+    height: max-content;
+    align-items: center;
+    margin-left: 0.5em;
+}
+.container-footer li{
+    display: none;
+}
+}
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+      padding: 0.5em;
+    }
+    }
