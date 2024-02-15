@@ -114,14 +114,14 @@ footer a:hover{
     font-size: 2em;
 }
 .food{
-    background-image: url(/img/cat\ food.webp);
+    background-image: url(../img/cat\ food.webp);
 }
 
 .toys{
-    background-image: url(/img/cat\ toys.webp);
+    background-image: url(../img/cat\ toys.webp);
 }
 .hair{
-    background-image: url(/img/cat\ hair.jpg);
+    background-image: url(../img/cat\ hair.jpg);
 }
 .accesories{
     background-image: url(/img/cat\ acce.jpeg);
