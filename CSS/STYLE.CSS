@@ -193,22 +193,22 @@ footer a:hover{
 }
 
 .all-products .toys :hover{
-   background-image: url(/img/cat\ toys.webp);
+   background-image: url(img/cat\ toys.webp);
    background-size: cover;
 }
 
 .all-products .food :hover{
-    background-image: url(/img/cat\ food.webp);
+    background-image: url(img/cat\ food.webp);
     background-size: cover;
    
 }
 .all-products .accesories :hover{
-    background-image: url(/img/cat\ acce.jpeg);
+    background-image: url(img/cat\ acce.jpeg);
     background-size: cover;
     
 }
 .all-products .hair :hover{
-    background-image: url(/img/cat\ hair.jpg);
+    background-image: url(img/cat\ hair.jpg);
     background-size: cover;
 }
 .tree :hover{
