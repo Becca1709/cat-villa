@@ -319,6 +319,11 @@ input[type=text], select, [type=password]{
 }
 /*media query reg form*/
 @media only screen and (min-width:360px) and (max-width:900px){
+    .logo{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0px;
+    }
     .logo img{
         min-width: 100px;
     }
@@ -336,6 +341,9 @@ input[type=text], select, [type=password]{
         color: orange;
         font-size: small;
     }
+    .nav-bar h3{
+        display: none;
+    }
     .search{
         display: flex;
         flex-direction: row;
@@ -350,18 +358,26 @@ input[type=text], select, [type=password]{
         min-height: 80%;
         margin: 2px;
     }
+    .products h3{
+        background-color: rgba(245, 245, 245, 0.865);
+        padding: 3px;
+        border-radius: 5px;
+        margin: 2px;
+    }
     .food, .toys, .hair, .accesories, .tree, .litter, .glasses, .clothes{
         background-size: cover;
         border-radius: 1.5rem;
         color: orange;
         font-weight: 600;
-        font-family: sans-serif;
-        text-align: center;   
+        font-family: sans-serif;   
+        flex-direction: row;
         font-size: xx-small;
-        justify-content:space-between;
         min-width: 80%;
-        min-height: 100px;
+        min-height: 150px;
         font-size: larger;
+       align-items: center;
+       
+   
     }
 
     #letters{
