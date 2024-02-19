@@ -1,6 +1,6 @@
 body{
     font-family: sans-serif;
-    color: orange;
+    color: rgb(242, 116, 6);
 }
 
 hr{
@@ -22,40 +22,63 @@ footer li{
 footer a:hover{
     color:black;
 }
+#home{
+    background-color:transparent;
+    color:rgb(242, 116, 6);
+    padding: 0em;
+    border-radius: 0em;
+}
+#home:hover{
+    background-color: transparent;
+    color: rgb(242, 116, 6);
+    padding: 0em;
+    border-radius: 0em;
+}
 .nav-bar{
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-between;
     background-color: #f9f8f5;
     border-radius: 2em 2em 0em 0em;
     padding: 0 2em;
     font-weight: 600;
     font-family: sans-serif;
-    color: orange;
+    color:rgb(242, 116, 6);
+    flex-basis: auto;
 }
-.search{
-    display: flex;
-    flex-direction: row;
+.top{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-evenly;
+        background-color: #f9f8f5;
+        border-radius: 2em 2em 0em 0em;
+        padding: 0 2em;
+        font-weight: 600;
+        width: 70%;
+        font-family: sans-serif;
+        color:rgb(242, 116, 6);
+        flex-basis: auto;
 }
 
 .nav-bar a{
     text-decoration: none;
 }
 .nav-bar a:hover{
-    background-color: orange;
+    background-color: rgb(242, 116, 6);
     color: whitesmoke;
     padding: 1em;
+    flex-basis: auto;
     border-radius: 1em;
 }
 .active{
     color:#f9f8f5;
-    background-color: orange;
+    background-color: rgb(242, 116, 6);
     padding: 1em;
     border-radius: 1em;
 }
 .non-active{
-    color:orange;
+    color:rgb(242, 116, 6);
 }
 .logo{
     display: flex;
@@ -66,6 +89,28 @@ footer a:hover{
     background-color:#f9f8f5;
     border-radius: 0em 0em 2em 2em;
 }
+.search{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    border-radius:100px;
+    border: solid rgb(242, 116, 6)3px;
+    margin-top: 0.5em;
+
+}
+.nav-bar .search > input{
+    border-radius:100px 0px 0px 100px;
+}
+.search > button{
+    border-radius: 0px 32px 32px 0px;
+    border: none;
+    width: 20%;
+    background-color:rgb(242, 116, 6);
+}
+.search > button:hover{
+    background-color: rgb(247, 135, 36);
+}
+
 
 .text{
    display: flex;
@@ -97,7 +142,7 @@ footer a:hover{
 .food, .toys, .hair, .accesories, .tree, .litter, .glasses, .clothes{
     background-size: cover;
     border-radius: 1.5rem;
-    color: orange;
+    color: rgb(242, 116, 6);
     display: flex;
     font-weight: 600;
     font-family: sans-serif;
@@ -124,27 +169,35 @@ footer a:hover{
     background-image: url(../img/cat\ hair.jpg);
 }
 .accesories{
-    background-image: url(/img/cat\ acce.jpeg);
+    background-image: url(../img/cat\ acce.jpeg);
 }
 
-.products button{
-    background-color: orange;
+.products a{
+    background-color: rgb(242, 116, 6) ;
     border-radius: 1.5em;
     border: none;
     padding: 1em;
+    width: max-content;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+.products button{
+    background-color:  rgb(242, 116, 6);
+    border: none;
     color: whitesmoke;
     font-weight: 600;
     width: max-content;
     display: flex;
     align-self: center;
     justify-self: center;
-    margin-bottom: 1em;
-   
 }
-.products button:hover{
-    background-color: rgba(255, 255, 255, 0.031);
+.products a:hover{
+    font-size: larger;
     border: solid 2px;
-    color:slategray;
 }
 
 .container-footer{
@@ -167,7 +220,8 @@ footer a:hover{
 
 .container-footer a{
     text-decoration: none;
-    color: rgb(255, 196, 0); 
+    color:  rgb(242, 116, 6); 
+    font-weight: 400;
 }
 .container-footer ul{
     padding-left: 0px;
@@ -179,62 +233,74 @@ footer a:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 
 }
 .all-products button{
-    background-color:rgb(235, 146, 3);
+    background-color:transparent;
     border-radius: 1.5em;
     border: none;
     padding: 1em;
-    color:rgb(19, 3, 125);
+    color:rgb(245, 129, 6);
     width: 100%;
     min-height: 400px;
 }
-
-.all-products .toys :hover{
+.all-products button:hover{
+    border-radius: 1.5em;
+    border: none;
+    padding: 1em;
+    color:slateblue;
+    width: 100%;
+    min-height: 400px;
+}
+.all-products .toys{
    background-image: url(../img/cat\ toys.webp);
    background-size: cover;
 }
 
-.all-products .food :hover{
+.all-products .food{
     background-image: url(../img/cat\ food.webp);
     background-size: cover;
    
 }
-.all-products .accesories :hover{
+.all-products .accesories{
     background-image: url(../img/cat\ acce.jpeg);
-    background-size: cover;
-    
+    background-size: cover;   
 }
-.all-products .hair :hover{
+
+.all-products .hair{
     background-image: url(../img/cat\ hair.jpg);
     background-size: cover;
 }
-.tree :hover{
+.tree{
     background-image: url(../img/cat\ tree.jpeg);
     background-size: cover;
 }
-.litter :hover{
+.litter{
     background-image: url(../img/litter.webp);
     background-size: cover;
 
 } 
-.glasses :hover{
+.glasses{
     background-image: url(../img/glases.jpg);
     background-size: cover;
 } 
-.clothes :hover{
+.clothes {
     background-image: url(../img/costums.jpg);
     background-size: cover;
-
 }
-
 #letters{
-    font-size: 5rem;
-    font-weight: 800;
+    font-size: 3.5rem;
+    font-weight: 800;  
+    background-color:rgba(255, 255, 255, 0.82); 
+    border-radius: 2em;
+    min-width: 100%;
 }
-
+#letters :hover{
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: rgb(245, 129, 6);   
+}
 /*REGISTRATION FORM*/
 .registration-form{
     width: 30%;
@@ -285,7 +351,7 @@ input[type=text], select, [type=password]{
 
 .container-reg{
     display: flex;
-    direction: row;
+    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -317,6 +383,14 @@ input[type=text], select, [type=password]{
     display: flex;
     justify-content: center;
 }
+
+.text-contact{
+    background-color: rgb(245, 129, 6);
+    color: black;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 2em;
+}
 /*media query reg form*/
 @media only screen and (min-width:360px) and (max-width:900px){
     .logo{
@@ -332,14 +406,20 @@ input[type=text], select, [type=password]{
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        justify-content: space-between;
         background-color: #f9f8f5;
         border-radius: 1em 1em 0em 0em;
         padding: 0 1em;
         font-weight: 400;
         font-family: sans-serif;
-        color: orange;
+        color: rgb(245, 129, 6);
+        flex-wrap: wrap;
+        
+    }
+    .top{
+        justify-content: space-between;
         font-size: small;
+        width: 100%;
+        
     }
     .nav-bar h3{
         display: none;
@@ -347,7 +427,23 @@ input[type=text], select, [type=password]{
     .search{
         display: flex;
         flex-direction: row;
-        width: 30%;
+        width:fit-content;
+        border-radius:32px 32px;
+        border: solid rgb(242, 116, 6) 3px;
+        margin-left: 25%;
+
+    }
+    .search input{
+        border-radius:32px 0px 0px 32px;
+        border: none;
+        background-color: whitesmoke;
+    }
+    .search button{
+        border-radius: 0px 32px 32px 0px;
+        border: none;
+        min-height: fit-content;
+        background-color: rgb(242, 116, 6);
+
     }
     .products{
         align-items: center;
@@ -367,7 +463,7 @@ input[type=text], select, [type=password]{
     .food, .toys, .hair, .accesories, .tree, .litter, .glasses, .clothes{
         background-size: cover;
         border-radius: 1.5rem;
-        color: orange;
+        color: rgb(245, 129, 6);
         font-weight: 600;
         font-family: sans-serif;   
         flex-direction: row;
@@ -427,7 +523,7 @@ input[type=text], select, [type=password]{
 .container-footer{
     background-color: #f9f8f5;
     border-radius: 0em 0em 2em 2em;
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     font-family: monospace;
     justify-content: space-around;
