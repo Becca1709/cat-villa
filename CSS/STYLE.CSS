@@ -22,55 +22,58 @@ footer li{
 footer a:hover{
     color:black;
 }
-#home{
+.nav-bar #home{
     background-color:transparent;
     color:rgb(242, 116, 6);
-    padding: 0em;
     border-radius: 0em;
+    margin: 0px auto;
+    max-width: fit-content;
 }
 #home:hover{
     background-color: transparent;
     color: rgb(242, 116, 6);
-    padding: 0em;
-    border-radius: 0em;
 }
 .nav-bar{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns:20% 50% auto;
     align-items: baseline;
     background-color: #f9f8f5;
     border-radius: 2em 2em 0em 0em;
-    padding: 0 2em;
     font-weight: 600;
     font-family: sans-serif;
     color:rgb(242, 116, 6);
-    flex-basis: auto;
-}
-.top{
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: space-evenly;
-        background-color: #f9f8f5;
-        border-radius: 2em 2em 0em 0em;
-        padding: 0 2em;
-        font-weight: 600;
-        width: 70%;
-        font-family: sans-serif;
-        color:rgb(242, 116, 6);
-        flex-basis: auto;
+    padding-right: 2em;
+    justify-items: space-evenly;
 }
 
-.nav-bar a{
+.nav-bar .top{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    grid-column-gap:1em;
+    background-color: #f9f8f5;
+    border-radius: 2em 2em 0em 0em;
+    font-weight: 600;
+    font-family: sans-serif;
+    color:rgb(242, 116, 6);
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+}
+.nav-bar .top a, .nav-bar #home{
     text-decoration: none;
+    min-width: fit-content;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin: 2em;
+
 }
 .nav-bar a:hover{
     background-color: rgb(242, 116, 6);
     color: whitesmoke;
-    padding: 1em;
-    flex-basis: auto;
-    border-radius: 1em;
+    transition: 500ms;
+    
 }
+
 .active{
     color:#f9f8f5;
     background-color: rgb(242, 116, 6);
@@ -89,15 +92,26 @@ footer a:hover{
     background-color:#f9f8f5;
     border-radius: 0em 0em 2em 2em;
 }
+.right{
+        display: flex;
+        flex-direction: row;
+        max-height: fit-content;
+        justify-self: right;
+        margin-right: 0.5em;
+}
+.right a:hover{
+    background-color: transparent;
+    border: none;
+}
 .search{
     display: flex;
     flex-direction: row;
-    width: 20%;
     border-radius:100px;
     border: solid rgb(242, 116, 6)3px;
     margin-top: 0.5em;
 
 }
+
 .nav-bar .search > input{
     border-radius:100px 0px 0px 100px;
 }
@@ -111,6 +125,19 @@ footer a:hover{
     background-color: rgb(247, 135, 36);
 }
 
+.nav-bar .icons{
+    margin-top: 1em;
+    margin-left: 0.5em;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+}
+
+.icons :hover{
+    border: 1px solid rgb(247, 135, 36);
+    border-radius: 50%;
+}
 
 .text{
    display: flex;
@@ -124,15 +151,10 @@ footer a:hover{
     max-width: 500px;
    
 }
-.products{
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 3em;
-    justify-items: center;
-    justify-content: space-around;
 
+.main h2{
+    margin: 3em;
+    text-align: center;
 }
 .products a{
     text-decoration: none;
@@ -391,37 +413,79 @@ input[type=text], select, [type=password]{
     margin: 2em;
     border-radius: 2em;
 }
+/* ACCOUNT PAGE*/
+.user-account form{
+    width: fit-content;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form button{
+    margin: 1em;
+}
 /*media query reg form*/
 @media only screen and (min-width:360px) and (max-width:900px){
+    iframe{
+        width:100%;
+      
+    }
     .logo{
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 0px;
+        margin: 0px auto;
+        justify-items: center;
     }
     .logo img{
         min-width: 100px;
+        margin: 0px auto;
+
+    }
+   
+  
+
+    .nav-bar .right{
+        display: flex;
+        flex-direction: row;
+        font-weight: 600;
+        font-family: sans-serif;
+        color:rgb(242, 116, 6);
+        align-items: center;
+        margin:0px auto;
+        justify-items: center;
     }
 
     .nav-bar{
         display: flex;
-        flex-direction: row;
-        align-items: baseline;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items:center;
         background-color: #f9f8f5;
         border-radius: 1em 1em 0em 0em;
         padding: 0 1em;
         font-weight: 400;
         font-family: sans-serif;
         color: rgb(245, 129, 6);
-        flex-wrap: wrap;
-        
+        justify-content:center;
+        justify-items: center;
     }
-    .top{
-        justify-content: space-between;
+
+    .nav-bar .top{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-column-gap: 0.5em;
+        max-width: 350px;
         font-size: small;
-        width: 100%;
+        border-radius: 0;
+        background-color: transparent; 
+        text-align: center;   
+        align-items: center;
+        padding-left: 0px;
         
     }
-    .nav-bar h3{
+    .nav-bar #home{
         display: none;
     }
     .search{
@@ -430,8 +494,8 @@ input[type=text], select, [type=password]{
         width:fit-content;
         border-radius:32px 32px;
         border: solid rgb(242, 116, 6) 3px;
-        margin-left: 25%;
-
+        margin-top: 1em;
+        flex-wrap: nowrap;
     }
     .search input{
         border-radius:32px 0px 0px 32px;
@@ -445,21 +509,7 @@ input[type=text], select, [type=password]{
         background-color: rgb(242, 116, 6);
 
     }
-    .products{
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        max-width: 95%;
-        justify-content: center;
-        min-height: 80%;
-        margin: 2px;
-    }
-    .products h3{
-        background-color: rgba(245, 245, 245, 0.865);
-        padding: 3px;
-        border-radius: 5px;
-        margin: 2px;
-    }
+ 
     .food, .toys, .hair, .accesories, .tree, .litter, .glasses, .clothes{
         background-size: cover;
         border-radius: 1.5rem;
@@ -472,8 +522,6 @@ input[type=text], select, [type=password]{
         min-height: 150px;
         font-size: larger;
        align-items: center;
-       
-   
     }
 
     #letters{
