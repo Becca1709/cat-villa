@@ -1,0 +1,506 @@
+body{
+    font-family: sans-serif;
+    color: rgb(242, 116, 6);
+    background-color: whitesmoke;
+}
+body * p{
+    font-family: sans-serif;
+    color: rgb(242, 116, 6);
+}
+.navbar .container-fluid .navbar-brand {
+    background-color:transparent;
+    color:rgb(242, 116, 6);
+    
+   
+}
+.navbar .container-fluid .collapse .navbar-nav .nav-link{
+    color:rgb(242, 116, 6);
+    font-weight: 600;
+
+}
+.container-fluid .d-flex .btn, .user-account form .btn, .container-reg .registration-form .btn{
+    background-color: rgb(242, 116, 6);
+    color:whitesmoke;
+    border: none;
+}
+.container-fluid .d-flex .btn:hover ,.user-account form .btn:hover, .container-reg .registration-form .btn:hover {
+    background-color: rgb(246, 133, 35);
+    color:whitesmoke;
+    border: none;
+}
+.container-fluid .icons{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+    margin: 0px auto;
+    padding-left: 1em;
+}
+
+.container-fluid .icons :hover{
+    border: 1px solid rgb(247, 135, 36);
+    border-radius: 50%;
+}
+
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    background-color:#f9f8f5;
+    border-radius: 0em 0em 2em 2em;
+    color: rgb(247, 135, 36);
+}
+
+.logo .text{
+    display: flex;
+    font-size: larger;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+.logo img{
+     max-width: 500px;
+    
+}
+
+.title{
+    display: grid;
+    grid-template-columns: 38% auto 38%;
+    grid-column-gap: 1em;
+    justify-content: center;
+ }
+
+.main .title hr{
+    color: rgba(19, 3, 125, 0.797);
+    opacity: 1;
+    border-style: dotted none none;
+    border-width: 15px;
+    margin: 5em auto 5em auto;  
+    justify-self: center;
+    width: 100%;
+}
+
+ .main h2{
+    margin: 1.5em;
+    align-self: center;
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(242, 116, 6);
+    font-weight: 600;
+}
+
+ .food, .toys, .hair, .accesories, .tree, .litter, .glasses, .clothes{
+    background-size: cover;
+    border-radius: 1.5rem;
+    color: rgb(242, 116, 6);
+    display: flex;
+    font-weight: 600;
+    font-family: sans-serif;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    min-height: 400px;
+    max-width: 40%;
+    min-width: 35%;
+    margin-bottom: 1.5rem;
+    text-align: center;   
+}
+.collapse .icons-burger a{
+    display: none;
+}
+
+.products h3{
+    font-size: 2em;
+}
+
+ .all-products{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 5em;
+
+}
+.all-products button{
+    background-color:transparent;
+    border-radius: 1.5em;
+    border: none;
+    padding: 1em;
+    color:rgb(245, 129, 6);
+    width: 100%;
+    min-height: 400px;
+}
+.all-products button :hover{
+    border-radius: 1.5em;
+    border: none;
+    padding: 1em;
+    color:slateblue;
+    width: 100%;
+}
+.all-products .toys{
+   background-image: url(../img/cat\ toys.webp);
+   background-size: cover;
+}
+
+.all-products .food{
+    background-image: url(../img/cat\ food.webp);
+    background-size: cover;
+   
+}
+.all-products .accesories{
+    background-image: url(../img/cat\ acce.jpeg);
+    background-size: cover;   
+}
+
+.all-products .hair{
+    background-image: url(../img/cat\ hair.jpg);
+    background-size: cover;
+}
+
+#letters{
+    font-size: 3.5rem;
+    font-weight: 800;  
+    background-color:rgba(255, 255, 255, 0.82); 
+    border-radius: 2em;
+    min-width: 100%;
+}
+
+/* products page*/
+.tree{
+    background-image: url(../img/cat\ tree.jpeg);
+    background-size: cover;
+}
+.litter{
+    background-image: url(../img/litter.webp);
+    background-size: cover;
+
+} 
+.glasses{
+    background-image: url(../img/glases.jpg);
+    background-size: cover;
+} 
+.clothes {
+    background-image: url(../img/costums.jpg);
+    background-size: cover;
+}
+/*registration page*/
+.container-reg .registration-form{
+    width: 35%;
+    text-align: left;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f8f5;
+    border-radius: 2em;
+    padding: 2em;
+    margin: 2em;
+    color:rgb(19, 3, 125);
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+input[type=text], select, [type=password]{
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    }
+
+.container-reg .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 1em;
+    }
+    
+.container-reg .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    }
+
+
+.container-reg .registration-form button {
+    margin: 2em;
+    padding: 0.5em;
+    width: fit-content;
+    display:grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    align-content: center;
+
+    }
+
+.container-reg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.float{
+    align-self: center;
+    max-width: 600px;
+    max-height: 500px;
+    text-align: center;
+    color:rgb(19, 3, 125);
+
+}
+
+/* ABOUT PAGE*/
+
+.about{
+    display: flex;
+    align-self: center;
+}
+.about img{
+  max-width: 600px;
+  height: fit-content;
+}
+.text-about{
+    margin: 1.5em;
+    min-width: 360px;
+    max-width: 600px;
+    height: fit-content;
+}
+.about-page{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+.text-contact{
+    background-color: rgb(245, 129, 6);
+    padding: 2em;
+    margin: 2em;
+    border-radius: 2em;
+}
+.text-contact h2, .text-contact p{
+    
+    color:white;
+}
+/*USER ACCOUNT*/
+.user-container{
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 90%;
+    justify-items: center;
+    align-items: center;
+}
+.user-account form {  
+    min-width: 250px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    gap: 0.5em;
+    padding-bottom: 1.5em;
+}
+.user-account form input{
+    min-width: 250px;
+}
+.user-account form p{  
+   color: rgb(19, 3, 125);
+   font-weight: 600;
+}
+
+
+/*FOOTER*/
+.container-footer{
+    background-color: #f9f8f5;
+    border-radius: 0em 0em 2em 2em;
+    display: flex;
+    flex-direction: row;
+    font-family: monospace;
+    padding:1em;
+    justify-content: space-around;
+    color:rgb(19, 3, 125);
+
+}
+
+.contact, .help, .others, .payment{
+    height: max-content;
+    align-items: center;
+    padding: 1em 0px;
+}
+
+.container-footer  * a, li{
+    text-decoration: none;
+    color:  rgb(242, 116, 6); 
+    font-weight: 400;
+    list-style: none;
+}
+.container-footer ul{
+    padding-left: 0px;
+
+}
+
+/*MEDIA Q*/
+@media only screen and (min-width:450px) and (max-width:900px){
+
+    .registration-form{
+        border-radius: 5px;
+        background-color: #f8f4f4;
+        min-width: 400px;
+        font-size: small;
+    }
+    
+    .container-reg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .food, .toys, .hair, .accesories, .tree, .litter, .glasses, .clothes{
+        background-size: cover;
+        border-radius: 1.5rem;
+        color: rgb(245, 129, 6);
+        font-weight: 600;
+        font-family: sans-serif;   
+        flex-flow: row wrap;
+        font-size: xx-small;
+        min-width: 80%;
+        min-height: 150px;
+        font-size: larger;
+       align-items: center;
+    }
+    .container-fluid .icons{
+        display: none;
+    }
+    .collapse .icons-burger{
+        margin: 1em;
+    }
+    .collapse .icons-burger a{
+        display: inline;
+    }
+    .collapse .icons-burger img:hover{
+        border: 1px solid rgb(247, 135, 36);
+        border-radius: 50%;
+        }
+
+    .contact, .help, .others, .payment{
+    height: max-content;
+    align-items: center;
+    margin-left: 0.5em;
+
+    }
+    .container-footer li{
+    display: none;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:450px){
+   
+    iframe{
+        width:80%;
+      
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px auto;
+        justify-items: center;
+    }
+    .logo img{
+        max-width: 200px;
+        margin: 0px auto;
+    }
+    .main .title hr{
+        color: rgba(19, 3, 125, 0.797);
+        opacity: 1;
+        border-style: dotted none none;
+        border-width: 10px;
+        margin: 2em;
+        justify-self: center;
+    }
+.food, .toys, .hair, .accesories, .tree, .litter, .glasses, .clothes{
+    background-size: cover;
+    border-radius: 1.5rem;
+    color: rgb(245, 129, 6);
+    font-weight: 600;
+    font-family: sans-serif;   
+    flex-flow: row wrap;
+    font-size: xx-small;
+    min-width: 80%;
+    min-height: 150px;
+    font-size: larger;
+   align-items: center;
+}
+
+#letters{
+    font-size: 2rem;
+    font-weight: 500;    
+}
+
+.registration-form{
+    border-radius: 5px;
+    background-color: #f8f4f4;
+    min-width: 400px;
+    font-size: small;
+}
+
+.container-reg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.float{
+    align-self: center;
+    text-align: center;
+    color:rgb(19, 3, 125);
+    margin: 1.5em;
+    margin-bottom: 2em;
+
+}
+
+.float img{
+    max-width: 300px;
+}
+
+.about-page{
+    flex-direction: column;
+    margin: 10%;
+    align-content: center;
+    max-width: fit-content;
+}
+.text-about{
+    margin: 0.5em;
+    max-width: 360px;
+}
+.about img{
+   max-width: 100%;
+}
+
+.container-footer{
+background-color: #f9f8f5;
+border-radius: 0em 0em 2em 2em;
+display: flex;
+flex-direction: column;
+font-family: monospace;
+justify-content: space-around;
+color:rgb(19, 3, 125);
+}
+.container-fluid .icons{
+    display: none;
+}
+.collapse .icons-burger{
+    margin: 1em;
+}
+.collapse .icons-burger a{
+    display: inline;
+}
+.collapse .icons-burger img:hover{
+    border: 1px solid rgb(247, 135, 36);
+    border-radius: 50%;
+    }
+.contact, .help, .others, .payment{
+height: max-content;
+align-items: center;
+margin-left: 0.5em;
+}
+.container-footer li{
+display: none;
+}
+}
