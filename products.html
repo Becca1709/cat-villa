@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Cat-villa</title>
   <link rel="stylesheet" href="CSS/b-style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
@@ -60,35 +60,62 @@
         <div class="title">
     <hr> <h2>All products</h2><hr>
     </div>
+    <aside>
+        <div class="cart">
+          <table class="cart-preview">
+            <th colspan="2"> Your Cart </th>
+            <tr>
+              <td> Items</td>
+              <td>Cart Subtotal</td>
+            </tr>
+            <tr>
+              <td> No items in your cart</td>
+              <td> $ 0 </td>
+            </tr>
+            <tr>
+              <td colspan="2"> Go To  <strong><a href="user_cart.html"> check out </a></strong></td>
+            </tr>
+          </table>
+        </div>
+      </aside>
+    <main>
     <div class="all-products">
-        <div class="food">
+        <div class="row-items">
+        <div class="food col-1">
             <button class="view-more"><p id="letters">FOOD</p></button>
         </div>
-        <div class="toys">
+        <div class="toys col-2">
             <button class="view-more"><p id="letters">TOYS</p></button>
         </div>
-        <div class="accesories">
+        </div>
+        <div class="row-items">
+        <div class="accesories col-1">
             <button class="view-more"><p id="letters">ACCESORIES</p></button>
         </div>
-        <div class="hair">
+        <div class="hair col-2">
             <button class="view-more"><p id="letters">HAIR CARE</p></button>
         </div>
-        <div class="tree">
+        </div>
+        <div class="row-items">
+        <div class="tree col-1">
             <button class="view-more"><p id="letters">MANSIONS</p></button>
         </div>
-        <div class="clothes">
+        <div class="clothes col-2">
             <button class="view-more"><p id="letters">COSTUMES</p></button>
         </div>
-        <div class="glasses">
+        </div>
+        <div class="row-items">
+        <div class="glasses col-1">
             <button class="view-more"><p id="letters">GLASSES</p></button>
         </div>
 
-        <div class="litter">
+        <div class="litter col-2">
             <button class="view-more"><p id="letters">LITTERS</p></button>
+        </div>
         </div>
     </div>
 </div>
-
+</main>
     <footer>
         <div class="container-footer">
        <div class="contact">
@@ -139,7 +166,9 @@
     <li> <img src="img/payment met.png" width="200px"> </li>
 </div>
 </div>
-
+<div class="container-footer copyright">
+    <span> &copy;2024  Becca Rojas</span>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>

@@ -7,6 +7,31 @@ body * p{
     font-family: sans-serif;
     color: rgb(242, 116, 6);
 }
+
+.cart{
+   float: right;
+   width: 20%;
+
+}
+.cart .cart-preview{
+   height: 300px;
+   background-color: rgb(94, 152, 245);
+   color: whitesmoke;
+   font-weight: 600;
+   border-radius: 32px;
+   text-align: center;
+  
+}
+
+.cart .cart-preview th{
+    text-align: center;
+   
+}
+.cart .cart-preview td{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
 .navbar .container-fluid .navbar-brand {
     background-color:transparent;
     color:rgb(242, 116, 6);
@@ -91,19 +116,13 @@ body * p{
 }
 
  .food, .toys, .hair, .accesories, .tree, .litter, .glasses, .clothes{
-    background-size: cover;
     border-radius: 1.5rem;
     color: rgb(242, 116, 6);
-    display: flex;
     font-weight: 600;
     font-family: sans-serif;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    min-height: 400px;
-    max-width: 40%;
-    min-width: 35%;
-    margin-bottom: 1.5rem;
-    text-align: center;   
+    min-width: 400px;
+    margin-bottom: 1rem;
+    text-align: center; 
 }
 .collapse .icons-burger a{
     display: none;
@@ -115,12 +134,21 @@ body * p{
 
  .all-products{
     align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     margin-bottom: 5em;
 
+}
+.row-items{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 80%;
+}
+.col-1{
+   width: 40%;
+   
+}
+.col-2{
+    width: 40%;
 }
 .all-products button{
     background-color:transparent;
@@ -134,18 +162,20 @@ body * p{
 .all-products button :hover{
     border-radius: 1.5em;
     border: none;
-    padding: 1em;
     color:slateblue;
     width: 100%;
 }
 .all-products .toys{
    background-image: url(../img/cat\ toys.webp);
    background-size: cover;
+   background-position: center;
+
 }
 
 .all-products .food{
     background-image: url(../img/cat\ food.webp);
     background-size: cover;
+    background-position: center;
    
 }
 .all-products .accesories{
@@ -156,14 +186,16 @@ body * p{
 .all-products .hair{
     background-image: url(../img/cat\ hair.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 #letters{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 800;  
     background-color:rgba(255, 255, 255, 0.82); 
     border-radius: 2em;
     min-width: 100%;
+    padding: auto;
 }
 
 /* products page*/
@@ -251,24 +283,25 @@ input[type=text], select, [type=password]{
 
 /* ABOUT PAGE*/
 
-.about{
-    display: flex;
-    align-self: center;
-}
+
 .about img{
-  max-width: 600px;
-  height: fit-content;
+  max-width: 500px;
+  height: auto;
+
 }
 .text-about{
-    margin: 1.5em;
-    min-width: 360px;
-    max-width: 600px;
+    width: 40%;
+    margin: 15px;
     height: fit-content;
+    justify-content: left;
+    text-wrap: balance;
 }
 .about-page{
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     margin-bottom: 4em;
+    align-items: center;
 }
 
 .text-contact{
@@ -278,7 +311,6 @@ input[type=text], select, [type=password]{
     border-radius: 2em;
 }
 .text-contact h2, .text-contact p{
-    
     color:white;
 }
 /*USER ACCOUNT*/
@@ -309,7 +341,7 @@ input[type=text], select, [type=password]{
 /*FOOTER*/
 .container-footer{
     background-color: #f9f8f5;
-    border-radius: 0em 0em 2em 2em;
+   
     display: flex;
     flex-direction: row;
     font-family: monospace;
@@ -335,10 +367,40 @@ input[type=text], select, [type=password]{
     padding-left: 0px;
 
 }
-
+.copyright{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    border-radius:0em 0em 2em 2em;
+}
 /*MEDIA Q*/
 @media only screen and (min-width:450px) and (max-width:900px){
-
+    .main .title hr{
+    max-width: 200px;
+   
+}
+    .logo{
+        min-width: 100%;
+    }
+    iframe{
+        justify-items: center;
+        max-width: 400px ;
+    }
+    .about-page{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4em;
+    }
+    .text-about{
+        width: 400px;
+        margin: 15px;
+        height: fit-content;
+        justify-content: left;
+        text-wrap: balance;
+    }
     .registration-form{
         border-radius: 5px;
         background-color: #f8f4f4;
@@ -389,10 +451,9 @@ input[type=text], select, [type=password]{
     }
 }
 @media only screen and (min-width:320px) and (max-width:450px){
-   
     iframe{
-        width:80%;
-      
+        justify-items: center;
+        max-width: 300px ;
     }
     .logo{
         display: flex;
@@ -405,13 +466,29 @@ input[type=text], select, [type=password]{
         max-width: 200px;
         margin: 0px auto;
     }
+    .main .title h2{
+       text-align: center;
+        width: max-content;
+        margin: 0.5em;
+    }
+.cart{
+    display: none;
+
+}
+    .main{
+        width:100%;
+        justify-content:center;
+        display: flex;
+        flex-flow: row wrap;
+    }
+ 
     .main .title hr{
-        color: rgba(19, 3, 125, 0.797);
-        opacity: 1;
-        border-style: dotted none none;
-        border-width: 10px;
-        margin: 2em;
-        justify-self: center;
+        display: none;
+    }
+    .all-products{
+        display: flex;
+        flex-flow: column;
+        width: 300px;
     }
 .food, .toys, .hair, .accesories, .tree, .litter, .glasses, .clothes{
     background-size: cover;
@@ -421,10 +498,11 @@ input[type=text], select, [type=password]{
     font-family: sans-serif;   
     flex-flow: row wrap;
     font-size: xx-small;
-    min-width: 80%;
+    min-width: 300px;
     min-height: 150px;
     font-size: larger;
    align-items: center;
+   
 }
 
 #letters{
@@ -435,7 +513,7 @@ input[type=text], select, [type=password]{
 .registration-form{
     border-radius: 5px;
     background-color: #f8f4f4;
-    min-width: 400px;
+    min-width: 300px;
     font-size: small;
 }
 
@@ -443,6 +521,7 @@ input[type=text], select, [type=password]{
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: fit-content;
 }
 
 
@@ -452,30 +531,24 @@ input[type=text], select, [type=password]{
     color:rgb(19, 3, 125);
     margin: 1.5em;
     margin-bottom: 2em;
-
 }
 
 .float img{
     max-width: 300px;
 }
 
-.about-page{
-    flex-direction: column;
-    margin: 10%;
-    align-content: center;
-    max-width: fit-content;
-}
+
 .text-about{
     margin: 0.5em;
-    max-width: 360px;
+    min-width: 300px;
 }
 .about img{
-   max-width: 100%;
+   max-width: 300px;
 }
 
 .container-footer{
+    width: 100%;
 background-color: #f9f8f5;
-border-radius: 0em 0em 2em 2em;
 display: flex;
 flex-direction: column;
 font-family: monospace;

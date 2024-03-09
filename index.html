@@ -54,30 +54,56 @@
         <h1>Cat Villa</h1>
         <p> Best pet store in Sydney</p>
     </div>
-    </div>
+  </div>
+  <main>
     <div class="main">
         <div class="title">
     <hr> 
     <h2>Most search for</h2>
+
     <hr>
+  </div>
+    <aside>
+      <div class="cart">
+        <table class="cart-preview">
+          <th colspan="2"> Your Cart </th>
+          <tr>
+            <td> Items</td>
+            <td>Cart Subtotal</td>
+          </tr>
+          <tr>
+            <td> No items in your cart</td>
+            <td> $ 0 </td>
+          </tr>
+          <tr>
+            <td colspan="2"> Go To  <strong><a href="user_cart.html"> check out </a></strong></td>
+          </tr>
+        </table>
       </div>
+    </aside>
+     
     <div class="all-products">
-       
-        <div class="food">
+       <div class="row-items">
+        <div class="food col-1">
             <button class="view-more"><p id="letters">FOOD</p></button>
         </div>
-        <div class="toys">
+        <div class="toys col-2">
             <button class="view-more"><p id="letters">TOYS</p></button>
         </div>
-        <div class="accesories">
+      </div>
+      <div class="row-items">
+        <div class="accesories col-1">
             <button class="view-more"><p id="letters">ACCESORIES</p></button>
         </div>
-        <div class="hair">
+        <div class="hair col-2">
             <button class="view-more"><p id="letters">HAIR CARE</p></button>
         </div>
+      </div>
 
     </div>
     </div>
+ 
+ 
     <footer>
     <div class="container-footer">
        <div class="contact">
@@ -128,7 +154,11 @@
     <li> <img src="img/payment met.png" width="200px"> </li>
 
 </div>
+
 </div>
+<div class="container-footer copyright">
+<span> &copy;2024  Becca Rojas</span>
+  </div>
 
     </footer>
     <script src="index.js"></script>
