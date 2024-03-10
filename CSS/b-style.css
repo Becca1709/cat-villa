@@ -15,12 +15,19 @@ body * p{
 }
 .cart .cart-preview{
    height: 300px;
-   background-color: rgb(94, 152, 245);
+   background-color: rgb(110, 124, 148);
    color: whitesmoke;
    font-weight: 600;
    border-radius: 32px;
    text-align: center;
-  
+}
+
+.cart .cart-preview a{
+    color: rgb(110, 124, 148);
+    text-decoration: none;
+    background-color: whitesmoke;
+    border-radius: 32px;
+    padding: 5px;
 }
 
 .cart .cart-preview th{
